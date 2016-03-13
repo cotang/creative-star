@@ -1,0 +1,21 @@
+@import "../../less/variables.less";     // только для удобства обращения к переменным
+@import "../../less/mixins/mixins.less"; // только для удобства обращения к примесям
+
+
+.connections {
+	background: url(../img/footer_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+
+	&__inner{
+		background-color: rgba(255,255,255,0.85);
+	}
+	&__title{
+		text-transform: uppercase;
+		font-family: @roboto;
+		font-size: @font-title;
+		font-weight: @font-weight-light;
+		letter-spacing: 10px; 
+		margin: 50px 0; 	
+	}
+}

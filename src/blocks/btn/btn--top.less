@@ -1,0 +1,27 @@
+// @import "../../less/variables.less";     // только для удобства обращения к переменным
+// @import "../../less/mixins/mixins.less"; // только для удобства обращения к примесям
+
+
+.btn--top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: @pink;
+  // padding: 5px 10px;
+  display: none;
+
+
+  &:hover{
+    background-color: @violet-darkest;
+  }
+
+
+  svg{
+    fill: @white;
+  }
+}
+.show-top{
+  display: block;
+  transition: all 1s; 
+  z-index: 10; 
+}

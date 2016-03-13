@@ -1,0 +1,55 @@
+@import "../../less/variables.less";     // только для удобства обращения к переменным
+@import "../../less/mixins/mixins.less"; // только для удобства обращения к примесям
+
+
+.infographics {
+  
+  &__item{
+  	text-align: center;
+  	color: @red;
+  	font-family: @raleway;
+	font-size: @font-p;	
+  }
+  p{
+  	margin: 0;
+  }
+  &__type{
+  	position: relative;
+  	top: -130px;
+  	color: @violet-darker;
+  	background: linear-gradient(to bottom, @pink, @red);
+  	padding: 35px 30px;
+  	display: inline-block;
+
+  	&:hover{
+  	  color: @white;
+  	  transition: all 1s;  		
+  	}
+  	&:hover .infographics__icon{
+	  fill: @white;
+  	  transition: all 1s;
+  	}
+  }
+  &__icon{
+	fill: @violet-darker;
+	margin-bottom: 10px;
+  }
+
+  &__diagram{
+  	padding-bottom: 20px;
+  }
+  &__circlechart{
+  	width: 100px;
+  	margin: -80px auto 20px;
+
+  	.ab{
+  		background-color: transparent !important;
+  	}
+  	.cir{
+  		background-color: @violet-darker !important;  		
+  	}
+  	.perc{
+  		color: @red !important;  		
+  	}
+  }
+}

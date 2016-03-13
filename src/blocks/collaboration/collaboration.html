@@ -1,0 +1,38 @@
+<!--DEV
+
+Нужно убрать пробел между @-ами:
+
+@ @include('blocks/collaboration/collaboration.html')
+
+-->
+
+<section class="collaboration" id="testimonials">
+	<div class="container">
+		<div class="collaboration__wrapper">
+			<div class="row">
+
+				<div class="col-sm-6">
+
+					<section class="collaboration__testimonials">
+						<div class="collaboration__carousel  owl-carousel owl-theme" id="owl-demo">				
+
+							@@include('../testimonial/testimonial.html', {"testimonial__img-path": "img/test_01.jpg", "testimonial__name": "Galina Blanca", "testimonial__occupation": "Director", "testimonial__text": "Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Несколько собрал, путь диких. Семь ты журчит за lorem, моей, безорфографичный дал своего составитель имени."})
+
+							@@include('../testimonial/testimonial.html', {"testimonial__img-path": "img/test_02.jpg", "testimonial__name": "Galina Blanca", "testimonial__occupation": "Director", "testimonial__text": "Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Несколько собрал, путь диких. Семь ты журчит за lorem, моей, безорфографичный дал своего составитель имени."})
+
+							@@include('../testimonial/testimonial.html', {"testimonial__img-path": "img/test_03.jpg", "testimonial__name": "Galina Blanca", "testimonial__occupation": "Director", "testimonial__text": "Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Несколько собрал, путь диких. Семь ты журчит за lorem, моей, безорфографичный дал своего составитель имени."})
+
+						</div>
+					</section>
+				</div>
+
+				<div class="col-sm-6">
+
+					@@include('../clients/clients.html')	
+												
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,27 @@
+@import "../../less/variables.less";     // только для удобства обращения к переменным
+@import "../../less/mixins/mixins.less"; // только для удобства обращения к примесям
+
+
+.feedback {
+	font-family: @raleway;
+	font-size: @font-p;
+
+	
+	label{
+		width: 100%;
+	}
+
+	input[type=text],input[type=e-mail],textarea {
+		width: 100%;
+		padding: 10px;
+		font-weight: @font-weight-light;
+		color: #555;
+		border: 1px solid #ccc;
+	}
+	// input[type=e-mail]{
+	// 	width: 100%;
+	// }
+	// textarea{
+	// 	width: 100%;
+	// }	
+}

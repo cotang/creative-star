@@ -1,0 +1,22 @@
+@import "../../less/variables.less";     // только для удобства обращения к переменным
+@import "../../less/mixins/mixins.less"; // только для удобства обращения к примесям
+
+
+.clients {
+  
+	&__list{
+
+	}
+	&__item{
+		font-size: 0;
+		display: inline-block;
+		background-color: @white;
+		height: 100%;
+		margin: 8px 4px;
+		opacity: 0.7;
+		&:hover{
+			opacity: 1;
+
+		}
+	}
+}

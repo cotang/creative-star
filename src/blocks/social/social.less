@@ -1,0 +1,19 @@
+@import "../../less/variables.less";     // только для удобства обращения к переменным
+@import "../../less/mixins/mixins.less"; // только для удобства обращения к примесям
+
+
+.social {
+	margin-top: 40px;
+
+	&__link{
+		display: inline-block;
+		border: 1px solid @pink;
+		padding: 8px;
+		margin-right: 10px;
+
+		svg{
+			display: block;
+			fill: @pink;
+		}
+	}
+}
