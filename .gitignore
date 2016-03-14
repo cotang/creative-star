@@ -2,6 +2,7 @@ build/*
 !build/readme.md
 src/blocks/sprite-svg--localstorage/img/*.svg
 _downloaded
+common.html
 
 .Saved/
 _arc/
