@@ -15,11 +15,18 @@
   }
   &__type{
   	position: relative;
-  	top: -130px;
+  	top: 20px;
   	color: @violet-darker;
   	background: linear-gradient(to bottom, @pink, @red);
   	padding: 35px 30px;
   	display: inline-block;
+    margin-bottom: 20px;
+
+    @media (min-width: @screen-sm) {
+      top: -130px;
+      margin-bottom: 0;
+    }
+
 
   	&:hover{
   	  color: @white;
@@ -36,11 +43,19 @@
   }
 
   &__diagram{
-  	padding-bottom: 20px;
+    padding: 20px 0 20px;
+
+    @media (min-width: @screen-sm) {
+      padding: 0 0 20px;
+    }    
   }
+
   &__circlechart{
   	width: 100px;
-  	margin: -80px auto 20px;
+  	margin: 0 auto 20px;
+    @media (min-width: @screen-sm) {
+        margin: -80px auto 20px;
+    }     
 
   	.ab{
   		background-color: transparent !important;

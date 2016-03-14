@@ -925,7 +925,7 @@
 
 
 //------------------------------------------------------------------------------
-//  Green valley
+//  Creative-star
 //------------------------------------------------------------------------------
 
 
@@ -999,3 +999,54 @@
 @margin-centering:          0 auto; //margin
 
 @transition:                all ease 1s;
+
+
+
+// Borders: 
+
+  .border-left{
+  	border-left: 1px solid @violet-border;
+  }  
+  .border-right{
+  	border-right: 1px solid @violet-border;
+  } 
+  .border-right--xs-invisible{
+  	border-right: none;
+	@media (min-width: @screen-sm) {
+      border-right: 1px solid @violet-border;
+	}  	
+  } 
+  .border-top{
+  	border-top: 1px solid @violet-border;
+  } 
+  .border-bottom{
+  	border-bottom: 1px solid @violet-border;
+  }   
+  .border-bottom--xs-visible{
+  	border-bottom: 1px solid @violet-border;
+	@media (min-width: @screen-sm) {
+  	  border-bottom: none;
+	}  	
+  }   
+  .empty{
+  	height: 100px;
+  }  
+
+  .table{
+  	display: table;
+  	width: 100%;
+  	margin: 0;
+  }
+  .table-cell{
+  	display: table-cell;
+  	float: none;
+  	&:first-child{
+      width: 100%;
+      @media (min-width: @screen-sm) {
+        width: 30%;
+      }
+  	}
+  }  
+  .relative{
+  	position: relative;
+  }

@@ -12,7 +12,7 @@ $(document).ready(function(){
     // };
     var menu = $('.page-header__menu');
     $(this).toggleClass('btn--close btn--hamburger');
-    $(menu).toggleClass('nav-invisible nav-visible');    
+    $(menu).toggle();    
   });
 
 
@@ -20,6 +20,8 @@ $(document).ready(function(){
 /*=================================
 ||          add/remove Class
 ==================================*/
+
+
     var changeStyle = $('.page-header');
     var top = $('.btn--top');
     function scroll() {
@@ -36,4 +38,7 @@ $(document).ready(function(){
 
 
 
+
 });
+
+

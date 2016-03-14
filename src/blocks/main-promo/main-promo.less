@@ -21,15 +21,29 @@
 	}
 	&__title{
 		display: inline-block;
-		font-size: @font-main-title;
+		font-size: @font-p-title;
 		font-weight: @font-weight-bold;
 		border: 2px solid @white;
-		letter-spacing: 15px;
-		padding: 20px 25px;
+		letter-spacing: 5px;
+		padding: 10px 15px;
+		margin: 0 20px 10px;
+
+		@media (min-width: @screen-sm) {
+			font-size: @font-main-title;
+			padding: 20px 25px;			
+			letter-spacing: 15px;			
+			margin: 0 0 20px;
+		}		
 	}
 	&__description{
-		font-size: @font-main-subtitle;
+		font-size: @font-article;
 		font-weight: @font-weight-light;
-		letter-spacing: 10px;
+		letter-spacing: 5px;
+		margin: 10px 20px 0;		
+		@media (min-width: @screen-sm) {
+			font-size: @font-main-subtitle;
+			letter-spacing: 10px;			
+			margin: 0;			
+		}			
 	}
 }	

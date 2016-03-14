@@ -4,37 +4,34 @@
 
 .about-us {
   &__wrapper{
-  	padding: 30px 40px 30px 80px;
+  	padding: 30px;
+    @media (min-width: @screen-sm) {
+      padding: 30px 40px 30px 80px;
+    }    
   }
   &__title{
   	text-transform: uppercase;
   	font-family: @roboto;
-	font-size: @font-title;
-	font-weight: @font-weight-light;
-	letter-spacing: 10px;  	
+	  font-size: @font-title;
+	  font-weight: @font-weight-light;
+	  letter-spacing: 5px;  	
+    @media (min-width: @screen-sm) {
+      letter-spacing: 10px;
+    }     
   }
   &__text{
   	margin-top: 30px;
   	font-family: @raleway;
-	font-size: @font-article;
+	  font-size: @font-p;
+    
+    @media (min-width: @screen-sm) {
+      font-size: @font-article;  
+    }     
   }
 
   &__pic{
   	background-image: url(../img/part_3_bg.jpg);
   	background-size: cover;
   	height: auto;
-  }
-
-  .table{
-  	display: table;
-  	width: 100%;
-  	margin: 0;
-  }
-  .table-cell{
-  	display: table-cell;
-  	float: none;
-  	&:first-child{
-  		width: 30%;
-  	}
   }
 }

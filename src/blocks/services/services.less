@@ -13,8 +13,11 @@
   	font-family: @roboto;
 	  font-size: @font-title;
 	  font-weight: @font-weight-light;
-	  letter-spacing: 10px;
+	  letter-spacing: 5px;
 	  margin: 50px 0;
+    @media (min-width: @screen-sm) {
+      letter-spacing: 10px;
+    }    
   }
 
   &__inner{
@@ -41,19 +44,5 @@
   }
 
 
-  .border-left{
-  	border-left: 1px solid @violet-border;
-  }  
-  .border-right{
-  	border-right: 1px solid @violet-border;
-  } 
-  .border-top{
-  	border-top: 1px solid @violet-border;
-  } 
-  .border-bottom{
-  	border-bottom: 1px solid @violet-border;
-  }   
-  .empty{
-  	height: 100px;
-  }   
+ 
 }

@@ -10,7 +10,10 @@
 		font-family: @roboto;
 		font-size: @font-title;
 		font-weight: @font-weight-light;
-		letter-spacing: 10px;
-		margin: 50px 0;  	
+		letter-spacing: 5px;
+		margin: 50px 0;  
+		@media (min-width: @screen-sm) {
+			letter-spacing: 10px;
+		}			
 	}
 }

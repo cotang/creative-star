@@ -5,11 +5,17 @@
 .person {
 	background-color: @violet;
 	text-align: center;
-	margin-top: 20px;
+	margin : 20px 0 60px;
+	@media (min-width: @screen-sm) {
+		margin : 20px 0 0;
+	}	
 
 	&__inner{
 		background-color: @pink;
-		margin: 0 50px;	
+		margin: 0 30px;
+		@media (min-width: @screen-sm) {
+			margin: 0 50px;
+		}			
 	}
 	&__pic{
 		position: relative;

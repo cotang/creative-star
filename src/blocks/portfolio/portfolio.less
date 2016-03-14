@@ -11,8 +11,11 @@
 		font-family: @roboto;
 		font-size: @font-title;
 		font-weight: @font-weight-light; 
-		letter-spacing: 10px;	
-		margin: 50px 0; 	
+		letter-spacing: 5px;	
+		margin: 50px 0; 
+		@media (min-width: @screen-sm) {
+			letter-spacing: 10px;
+		}			
 	}
 	&__category-list{
 		margin: 0 0 30px;
@@ -33,9 +36,12 @@
 		}		
 	}  
 	&__pic{
-		width: 33.33333%;
+		width: 100%;
 		text-align: center;
 		overflow: hidden;
+		@media (min-width: @screen-sm) {
+			width: 33.33333%;
+		}		
 
 		img{
 			width: 100%;
@@ -96,6 +102,5 @@
 		font-size: @font-article;
 		padding: 10px;
 		text-align: center;
-
 	}
 }

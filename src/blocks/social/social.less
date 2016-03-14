@@ -9,7 +9,10 @@
 		display: inline-block;
 		border: 1px solid @pink;
 		padding: 8px;
-		margin-right: 10px;
+		margin-right: 5px;
+		@media (min-width: @screen-sm) {
+			margin-right: 10px; 
+		}
 
 		svg{
 			display: block;
