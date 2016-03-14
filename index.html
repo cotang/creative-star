@@ -19,13 +19,13 @@
 
 <body>
 <section class="page-header navbar-fixed-top">
-	<div class="container">
+	<div class="container  relative">
 		<div class="page-header__logo  navbar-left">
 			<a href="">Creative Star</a>
-			<svg width="25" height="25"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#star"></use></svg>
+			<svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#star"></use></svg>
 		</div>
 		<nav class="page-header__nav">
-			<button class="btn btn--close pull-right" id="hamburgerToggle"></button>					
+			<button class="btn btn--hamburger pull-right" id="hamburgerToggle"></button>					
 			<ul class="page-header__menu nav nav-pills nav-visible navbar-right">
 				<li class="page-header__item"><a href="#home">Home</a></li>
 				<li class="page-header__item"><a href="#service">Service</a></li>
@@ -65,7 +65,7 @@
 		<div class="container-fluid  border-bottom">
 			<div class="container  border-left  border-right">
 				<div class="row">
-					<div class="col-sm-5  border-right">
+					<div class="col-sm-5  border-right--xs-invisible">
 						<h3 class="services__subtitle">What we do now?</h3>
 					</div>
 					<div class="col-sm-7"></div>
@@ -73,70 +73,72 @@
 			</div>
 		</div>
 
-		<div class="container  border-left  border-right">
-			<div class="row">
-				<div class="col-sm-5  border-right">
-					<div class="services__text-wrapper">
-						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Дал собрал, если, пунктуация свой буквоград переписывается вершину пустился моей даль, предупредила единственное несколько то.</p>
-						<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Переулка повстречался это подзаголовок коварный.</p>
+		<div class="container-fluid">
+			<div class="container  border-left  border-right">
+				<div class="row">
+					<div class="col-sm-5  border-right--xs-invisible border-bottom--xs-visible">
+						<div class="services__text-wrapper">
+							<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Дал собрал, если, пунктуация свой буквоград переписывается вершину пустился моей даль, предупредила единственное несколько то.</p>
+							<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Переулка повстречался это подзаголовок коварный.</p>
+						</div>
 					</div>
-				</div>
-				<div class="col-sm-7">
-									<div class="infographics">
-										<div class="row">
-											<div class="col-xs-4">
-												<div class="infographics__item">
-													<div class="infographics__type">
-														<svg class="infographics__icon" width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#android"></use></svg>
-														<p>ANDROID</p>
-														<p>DEVELOPMENT</p>									
-													</div>
-													<div class="infographics__diagram">
-														<div class="infographics__circlechart  circlechart" data-percent="90"></div>
-														<p>90</p>
-														<p>Completed</p>							
-													</div>
-												</div>
-											</div>
-											<div class="col-xs-4">
-												<div class="infographics__item">
-													<div class="infographics__type">
-														<svg class="infographics__icon" width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#apple"></use></svg>
-														<p>iOS</p>
-														<p>DEVELOPMENT</p>
-													</div>
-													<div class="infographics__diagram">
-														<div class="infographics__circlechart  circlechart" data-percent="75"></div>
-														<p>75</p>
-														<p>Completed</p>
+					<div class="col-sm-7">
+										<div class="infographics">
+											<div class="row">
+												<div class="col-sm-4">
+													<div class="infographics__item">
+														<div class="infographics__type">
+															<svg class="infographics__icon" width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#android"></use></svg>
+															<p>ANDROID</p>
+															<p>DEVELOPMENT</p>									
+														</div>
+														<div class="infographics__diagram">
+															<div class="infographics__circlechart  circlechart" data-percent="90"></div>
+															<p>90</p>
+															<p>Completed</p>							
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="col-xs-4">
-												<div class="infographics__item">
-													<div class="infographics__type">
-														<svg class="infographics__icon" width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#target"></use></svg>
-														<p>OTHERS</p>
-														<p>DEVELOPMENT</p>
+												<div class="col-sm-4">
+													<div class="infographics__item">
+														<div class="infographics__type">
+															<svg class="infographics__icon" width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#apple"></use></svg>
+															<p>iOS</p>
+															<p>DEVELOPMENT</p>
+														</div>
+														<div class="infographics__diagram">
+															<div class="infographics__circlechart  circlechart" data-percent="75"></div>
+															<p>75</p>
+															<p>Completed</p>
+														</div>
 													</div>
-													<div class="infographics__diagram">
-														<div class="infographics__circlechart  circlechart" data-percent="85"></div>
-														<p>85</p>
-														<p>Completed</p>
+												</div>
+												<div class="col-sm-4">
+													<div class="infographics__item">
+														<div class="infographics__type">
+															<svg class="infographics__icon" width="40" height="40"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#target"></use></svg>
+															<p>OTHERS</p>
+															<p>DEVELOPMENT</p>
+														</div>
+														<div class="infographics__diagram">
+															<div class="infographics__circlechart  circlechart" data-percent="85"></div>
+															<p>85</p>
+															<p>Completed</p>
+														</div>
 													</div>
 												</div>
 											</div>
 										</div>
-									</div>
 
+					</div>
 				</div>
 			</div>
-		</div>
+		</div>		
 
 		<div class="container-fluid  border-top">
 			<div class="container  border-left  border-right">
 				<div class="row">
-					<div class="col-sm-5  border-right  empty"></div>
+					<div class="col-sm-5  border-right--xs-invisible  empty"></div>
 					<div class="col-sm-7"></div>
 				</div>
 			</div>
