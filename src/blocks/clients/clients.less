@@ -5,7 +5,12 @@
 .clients {
   
 	&__list{
+		margin-top: 20px;
 		font-size: 0;
+		width: 100%;
+		@media (min-width: @screen-lg) {
+			margin-top: 0;				
+		}		
 	}
 	&__item{
 		font-size: 0;
@@ -13,14 +18,14 @@
 		text-align: center;
 		background-color: @white;
 		margin: 8px 4px;
-		// padding: 0 4px;
 		opacity: 0.7;
 		width: calc(50% - 4px);
-		height: auto;		
+		height: auto;
+
 		@media (min-width: @screen-sm) {
-			width: auto;
-			height: 100%;
-			margin: 8px 4px;								
+			width: calc(33.33333333333333% - 2px);
+			height: auto;			
+			margin: 8px 4px;				
 		}
 
 		&:hover{

@@ -8,7 +8,7 @@
   	text-align: center;
   	color: @red;
   	font-family: @raleway;
-	font-size: @font-p;	
+	  font-size: @font-p;	
   }
   p{
   	margin: 0;
@@ -23,10 +23,16 @@
     margin-bottom: 20px;
 
     @media (min-width: @screen-sm) {
-      top: -130px;
-      margin-bottom: 0;
+      top: -120px;
+      margin-bottom: 0;      
+      padding: 25px 20px;
+      font-size: @font-small;       
     }
-
+    @media (min-width: @screen-lg) {
+      top: -130px;      
+      padding: 35px 30px;      
+      font-size: @font-p; 
+    }
 
   	&:hover{
   	  color: @white;
