@@ -7,17 +7,17 @@
 -->
 				<div class="feedback">
 				
-					<form action="" class="row">
+					<form action="contact.php" method="post" id="contact-form" class="row">
 						<div class="col-sm-6 form-group">
-							<label class="feedback__name"><input type="text" placeholder="Enter your name"></label>
+							<label class="feedback__name  wow fadeInLeft"><input type="text" name="name" placeholder="Enter your name"></label>
 						</div>
 						<div class="col-sm-6 form-group">
-							<label class="feedback__email"><input type="e-mail" placeholder="Enter your email"></label>
+							<label class="feedback__email  wow fadeInRight"><input type="e-mail" name="email" placeholder="Enter your email"></label>
 						</div>
 						<div class="col-sm-12 form-group">
-							<label class="feedback__text"><textarea name="feedback__text" rows="10" placeholder="Write something"></textarea></label>
+							<label class="feedback__text  wow fadeInUp"><textarea name="message" rows="10" placeholder="Write something"></textarea></label>
 						</div>
-						<button class="btn btn--submit pull-right">Submit</button>
+						<button class="btn btn--submit pull-right  wow fadeInLeftBig">Submit</button>
 					</form>
 
 					@@include('../success/success.html')

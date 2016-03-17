@@ -23,7 +23,7 @@ function closest(el, selector) {
 ||      WOW
 ==================================*/
 
-// new WOW().init();
+new WOW().init();
 
 
 /*=================================
