@@ -48,6 +48,7 @@ new WOW().init();
   // init Isotope
   var $container = $('#isotope').isotope({
     // options
+      // filter: '*',
       itemSelector: '.portfolio__pic'
   });
 
