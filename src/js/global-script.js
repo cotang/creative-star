@@ -42,40 +42,15 @@ new WOW().init();
 
 
 /*=================================
-||      Isotope
+||      Filter
 ==================================*/
-
-  // init Isotope
-  var $container = $('#isotope').isotope({
-    // options
-      // filter: '*',
-      itemSelector: '.portfolio__pic'
-  });
 
   // filter items on button click
-  $('#filters').on( 'click', 'button', function() {
+  $('.portfolio__category').on( 'click', function() {
     var filterValue = $(this).attr('data-filter');
-    $container.isotope({ filter: filterValue });
+    var filteredPic = $(this).closest('.portfolio').find('.portfolio__pic');
+    filteredPic.not(filterValue).fadeOut(400);
+    filteredPic.filter(filterValue).fadeIn(400);
   });
 
 
-
-
-
-/*=================================
-||      Smooth Scrooling
-==================================*/
-  // $(function() {
-  //     $('a[href*=#]:not([href=#])').click(function() {
-  //         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-  //             var target = $(this.hash);
-  //             target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-  //             if (target.length) {
-  //                 $('html,body').animate({
-  //                   scrollTop: (target.offset().top - 62)//top navigation height
-  //                 }, 1000);
-  //                 return false;
-  //             }
-  //         }
-  //     });
-  // });

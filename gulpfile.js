@@ -320,10 +320,6 @@ function getComponentsFiles() {
   if(fileExistAndHasContent(dirs.source + '/js/jquery.circlechart.js')) {
     сomponentsFilesList.js.unshift(dirs.source + '/js/jquery.circlechart.js');
   }  
-  // Добавим isotope.pkgd.js
-  if(fileExistAndHasContent(dirs.source + '/js/isotope.pkgd.js')) {
-    сomponentsFilesList.js.unshift(dirs.source + '/js/isotope.pkgd.js');
-  } 
   // Добавим nivo-lightbox.js
   if(fileExistAndHasContent(dirs.source + '/js/nivo-lightbox.js')) {
     сomponentsFilesList.js.unshift(dirs.source + '/js/nivo-lightbox.js');
